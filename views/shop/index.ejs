@@ -15,9 +15,42 @@
       </div>
     </div> -->
   <main>
-    <%- include('main.ejs') %> <!-- 🛍️ Section Principale -->
-    <%- include('../includes/product-list.ejs') %> <!-- 🛍️ (📂 la liste des produits)--> 
+    <%- include('landing.ejs') %> <!-- 🛍️ Section Principale -->
+    <%- include('../includes/prestation-table.ejs') %> <!-- 🛍️ (📂 table des tarifs des services)--> 
+    <%- include('../includes/product-list.ejs') %> <!-- 🛍️ (📂 slider des produits)--> 
   </main>
+
+  <footer class="bg-dark text-light py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>À propos</h5>
+          <p>Nous sommes une entreprise dédiée à offrir les meilleurs produits à des prix compétitifs. Notre priorité est la satisfaction de nos clients.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Contactez-nous</h5>
+          <ul class="list-unstyled">
+            <li>Email: contact@entreprise.com</li>
+            <li>Téléphone: +33 1 23 45 67 89</li>
+            <li>Adresse: 123 Rue de l'Exemple, Paris, France</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Suivez-nous</h5>
+          <ul class="list-unstyled d-flex">
+            <li><a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="text-light"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col text-center">
+          <p>&copy; 2024 Nom de l'Entreprise. Tous droits réservés.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <%- include('../includes/end.ejs') %> <!-- 🔚 (📂 la fin de la page commune) -->
 </body>
