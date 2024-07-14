@@ -1,18 +1,23 @@
-<%- include('../includes/head.ejs') %>
-  <link rel="stylesheet" href="/css/homepage.css">
-  <link rel="stylesheet" href="/css/product.css">
+<%- include('../includes/head.ejs') %> <!-- 📄 (📂 l'en-tête commun) -->
+  <link rel="stylesheet" href="/css/product.css"> <!-- 🎨 (🖌️ les produits) -->
 </head>
 
 <body>
-  <%- include('../includes/navigation.ejs') %>
-  <div class="uk-background-cover uk-height-large uk-panel uk-flex uk-flex-middle" style="background-image: url(images/background.jpg);">
-    <div class="banner" >
-      <span class="banner-head">Sale</span><br />
-      <span class="banner-text">30% on Popular Products!</span>
-    </div>
-    
-  </div>
+  <%- include('../includes/navigation.ejs') %> <!-- 🧭 (📂 la barre de navigation) -->
+  <!-- 🏷️ Bannière Héro -->
+  
+    <!-- 30% Promo
+    <div class="d-flex align-items-center justify-content-center" style="background-image: url(images/background.jpg); background-size: cover; height: 100vh;">
+      <div class="banner text-center">
+        <span class="display-4 text-light font-weight-bold">Soldes</span><br />
+        <span class="h4 text-light">30% sur les produits populaires!</span>
+      </div>
+    </div> -->
+
   <main>
-    <%- include('../includes/product-list.ejs') %>
+    <%- include('main.ejs') %> <!-- 🛍️ Section Principale -->
+    <%- include('../includes/product-list.ejs') %> <!-- 🛍️ (📂 la liste des produits)--> 
   </main>
-<%- include('../includes/end.ejs') %>
+
+  <%- include('../includes/end.ejs') %> <!-- 🔚 (📂 la fin de la page commune) -->
+</body>
