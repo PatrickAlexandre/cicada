@@ -1,3 +1,0 @@
-  <!-- 🌟 Fonts and Icons -->
-  <script src="https://kit.fontawesome.com/be85c9a798.js" crossorigin="anonymous"></script>
-
